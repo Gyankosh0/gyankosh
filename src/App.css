@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*>* {
+  font-family: "Poppins", cursive;
+  margin: 0;
+}
+
+body {
+
+}
+
+
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bt {
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+}
+
+.td {
+  text-decoration: none;
+  color: white;
+}
+
+#form {
+  max-width: 320px;
+  width: 100vw;
+  margin: 2em auto;
+  display: flex;
+  align-items: center;
+}
+
+#form>input,
+.btn {
+  border: 0px;
+  /* padding: .9em 1em; */
+}
+
+#form>input:focus {
+  outline: none;
+}
+
+#form>.btn {
+  background-color: #E0925A;
+  width: 90%;
+  color: #e9ecef;
+  font-size: 1.8vw;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  gap: 0.8em;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+@media (max-width: 1025px) {
+  #form>.btn {
+    font-size: 2.8vw;
+
+}
+}
+
+
+  @media (max-width: 769px) {
+    #form>.btn {
+        font-size: 5.8vw;
+    }
+    #form>.btn {
+      width: 58vw;
+  
+  }
+  }
+  

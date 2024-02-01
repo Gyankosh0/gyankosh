@@ -1,0 +1,117 @@
+.main{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.outerBox{
+    margin: 0 auto;
+    position: relative;
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.logo{
+    width: 100%;
+    height: 22vh;
+    margin-bottom: 5vh;
+
+    
+}
+.logo img{
+    width: 40vw;
+    margin-top: -4%;
+
+}
+.innerBox{
+    min-width: 90%;
+    height: 90%;
+    border-radius: 0.625rem;
+    border: 1px solid #000;
+    background: rgba(225, 225, 225, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.innerBox>h3{
+    font-weight: 800;
+    font-size: 3vw;
+}
+.lgIcon{
+    font-size: 3vw;
+    cursor: pointer;
+}
+.ipIcon{
+    font-size: 1.8vw;
+}
+
+/* md */
+@media (max-width: 769px) {
+    .innerBox h3{
+        font-size: 4vw;
+    }
+    .outerBox{
+        width: 70vw;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .lgIcon{
+        font-size: 5vw;
+    }
+    .ipIcon{
+        font-size: 3.2vw;
+    }
+    .input{
+        width: 25vw;
+    }
+    .logo img{
+        width: 70vw;
+    
+    }
+    .innerBox{
+        gap: 2vw;
+    }
+
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .outerBox{
+        width: 85vw;
+    }
+    .ipIcon{
+        font-size: 5vw;
+    }
+    .input{
+        width: 32vw;
+    }
+    .logo img{
+        width: 90vw;
+
+    
+    }
+    .innerBox h3{
+        font-size: 6vw;
+    }
+    .innerBox{
+        gap: 3vw;
+    }
+}

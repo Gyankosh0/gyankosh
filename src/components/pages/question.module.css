@@ -1,0 +1,381 @@
+.main {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+
+
+}
+.fmdiv1{
+    display: flex;
+    width: 94vw;
+}
+.fmdiv2{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.fmdiv2 label ,.rvw,.clr{
+    font-size: 1vw;
+    
+    white-space: nowrap;
+    
+
+font-weight: 500;
+line-height: normal;
+
+}
+.headdiv {
+    position: absolute;
+    top: -10px;
+    z-index: 2;
+}
+
+.head {
+    position: fixed;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    border-radius: 1.875rem 0.625rem;
+    background: #FF791A;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    width: 90vw;
+}
+
+.head h1 {
+    color: #FFF;
+    font-size: 2.2vw;
+    padding: 0.5vw;
+}
+
+.quest {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.box1 {
+    margin-top: 2vh;
+    position: relative;
+    border: 1px solid #FF791A;
+
+    background: rgba(255, 255, 255, 0.50);
+
+    box-shadow: 0px 4px 4px 0px #C56A29;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    padding: 20px 10px;
+    width: 98vw;
+    height: 90vh;
+    overflow: hidden;
+}
+.box2{
+    border-radius: 0.625rem;
+border: 1px solid #FF791A;
+background: rgba(255, 202, 112, 0.50);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+overflow: hidden;
+}
+.fm {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 50px; */
+}
+
+.class {
+    border: 1px solid #FF791A;
+background: #FFF;
+    /* width: 170px; */
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+.Language {
+    width: 170px;
+    margin-right: 2vw;
+    margin-top: 8px;
+}
+
+.Question {
+    width: 170px;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+.Subject {
+    width: 170px;
+    margin-right: 1.5vw;
+    margin-top: 5px;
+}
+
+.auto {
+    margin-right: 90px;
+    /* margin-top: 5px; */
+}
+
+.Chapter {
+    margin-right: 2vw;
+    width: 380px;
+    height: 23px;
+    overflow-y: auto;
+}
+
+.question_type {
+    width: 450px;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+.rvw,.clr{
+    border: 1px solid #FF791A;
+background: #FFF;
+padding: 0.3rem;
+}
+
+.Topic {
+    width: 700px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.t1 {
+    margin-left: 160px;
+}
+
+.rvw {
+    margin-right: 0.2rem;
+}
+
+.clr {
+    /* margin-right: 10px; */
+}
+
+.sq {
+    margin-right: 1px;
+    margin-top: 5px;
+}
+
+.selectauto {
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+.selecttotal {
+    margin-right: 10px;
+}
+
+.autototal {
+    margin-left: 10px;
+    margin-right: 80px;
+}
+
+.Topics {
+    margin-left: 0px;
+}
+
+.t2 {
+    margin-left: 60px;
+}
+
+.reg {
+    width: auto;
+    min-height: 18vh;
+    height: auto;
+    display: flex;
+    background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cont {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    height: 50vh;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+option {
+    overflow-y: scroll;
+}
+
+body {
+    background: #f5f6fa;
+}
+.wrapper{
+    position: relative;
+
+    padding: 10px;
+    height: 100%;
+
+}
+.sidebar {
+    left: 0;
+    padding: 0px 0;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    height: 100%;
+    transition: all 0.5s ease;
+
+}
+.wrapper1{
+    position: relative;
+    padding: 10px;
+    height: 100%;
+    
+}
+.sidebar1 {
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.tq {
+    background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 8vw;
+    margin: 10px 0px 2px;
+    padding: 5px;
+    font-size: 1vw;
+    /* text-align: justify; */
+}
+
+.ts {
+    width: 8vw;
+
+    font-size: 1vw;
+
+    margin: 10px 0px 2px;
+    padding: 5px;
+    background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.btsumm, .btquestpaper,.btsavepaper{
+    border: 1px solid #FF791A;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+width: 65%;
+}
+.btsumm {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+.btquestpaper {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 10px;
+}
+
+.btsavepaper {
+    margin: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.quesbox {
+    margin: auto;
+    width: 260px;
+    border: solid;
+    padding-bottom: 5px;
+}
+
+.bt-question {
+    z-index: 10;
+    padding-left: 10px;
+    padding-top: -5px;
+    padding-right: 5px;
+
+}
+
+.vis {
+    display: none;
+}
+
+.topqp {
+    width: inherit;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    background: rgb(192, 203, 210);
+}
+
+.sec_qp {
+    width: inherit;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+}
+
+.btico {
+    padding: 2px;
+    justify-content: space-between;
+}
+
+.qptop {
+    width: inherit;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    background: rgb(145, 152, 157);
+}
+
+.num_ques {
+    text-decoration: none;
+    color: black;
+
+}
+
+.parent_qnum {
+    display: flex;
+    height: 35px;
+    margin-left: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inp {
+    margin-left: 70px;
+}
+
+.tqques {
+    height: 26px;
+    background: rgb(164, 174, 180);
+    ;
+}

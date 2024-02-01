@@ -1,0 +1,109 @@
+.register {
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #FFF;
+
+    background: rgba(255, 255, 255, 0.50);
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 88vh;
+
+}
+
+.col1 {
+    min-width: 90%;
+    height: 84vh;
+    border-radius: 0.625rem;
+    border: 1px solid #000;
+    background: rgba(225, 225, 225, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formSection {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.formLogo {
+    width: 100%;
+
+}
+
+.register {
+    max-width: 700px;
+    width: 60vw;
+    display: flex;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+}
+
+.register span {
+    color: #adb5bd;
+}
+
+.register .col-1 {
+    margin: auto;
+    padding: 3em 0;
+}
+
+.formLogo img {
+    width: 40vw;
+    margin: -9% 0% -11% 0%;
+
+
+}
+
+.topHeader {
+    background: rgba(6, 6, 6, 0.50);
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topHeader span {
+    background: #FFF;
+    padding: 0rem 2.0625rem 0rem 1.4375rem;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+/* md */
+@media (max-width: 769px) {
+    .register {
+        width: 85vw;
+    }
+
+    .formLogo img {
+        width: 77vw;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {}
+
+/* xs */
+@media (max-width: 475px) {
+    .register {
+        width: 95vw;
+    }
+}
+
+@media (max-width: 385px) {}
