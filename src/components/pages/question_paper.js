@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import Classes from "../../assets/data/class.json";
 import Lang from "../../assets/data/language.json";
 import Sub from "../../assets/data/subject.json";
@@ -9,13 +8,22 @@ import { IoIosAddCircleOutline } from "react-icons/io";
 import { MdDelete } from "react-icons/md";
 import { BsBookmarks } from "react-icons/bs";
 import { RxCrossCircled } from "react-icons/rx";
+import { IoArrowBackCircleSharp } from "react-icons/io5";
 import Question from "../../assets/data/question.json";
 import { useParams } from "react-router";
 import styles from "./question.module.css";
 import bgImg from "../../assets/bgImg.jpeg";
-
+import { useForm } from "react-hook-form";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 function Question_paper() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+ 
   let { id } = useParams();
   const key = { id };
   console.log(key.id);
@@ -26,7 +34,11 @@ function Question_paper() {
   const [rev, setRev] = useState(false);
   const [cls, setCls] = useState(false);
   const [ques, setQues] = useState(false);
-
+  const [gen,setGen]=useState(false);
+  const [cl,setcl]=useState("");
+  const [level,setlevel]=useState("");
+  const [sub,setSub]=useState("");
+  const [obj,setObj]=useState([]);
   const review = (e) => {
     e.preventDefault();
     setRev(true);
@@ -35,10 +47,49 @@ function Question_paper() {
     e.preventDefault();
     setRev(false);
   };
-
+  const handleChange = (e) => {
+    setcl(e.target.value);
+  };
+  const handleChangeLevel = (e) => {
+    setlevel(e.target.value);
+  };
+  const handleChangeSub = (e) => {
+    setSub(e.target.value);
+  };
   useEffect(() => {
     console.log(rev);
   }, [key]);
+  useEffect(()=>{
+    console.log("h");
+  },[obj]);
+  const onSubmit=(e)=>{
+    e.preventDefault;
+    console.log(e);
+    setRev(true);
+    const data={
+      "class":cl,
+      "level":level,
+      "subject":sub
+    };
+    
+    // console.log(JSON.stringify(data));
+    // console.log(data.class, Question[0].class);
+    // var fav=[];
+    // for(var i=0;i<Question.length;i++){
+    //   if(data.class == Question[i].class && data.level == Question[i].level){
+    //     var js={"question":Question[i].question,"solution":Question[i].solution};
+    //     fav.push(js);
+    //     setObj(fav);
+    //   }
+    // }
+    // console.log(fav);
+
+    const arr1=Question.filter(q=>q.class==data.class && q.level==data.level);
+    setObj(arr1);
+    /***fetch******/
+    
+  }
+  console.log(obj);
   return (
     <div className={styles.main} style={{ backgroundImage: `url(${bgImg})` }}>
       <div className={styles.quest}>
@@ -50,17 +101,17 @@ function Question_paper() {
           </div>
           <div className={styles.box2}>
             <div>
-              <form className={styles.fm}>
+              <form id="formEle" className={styles.fm} onSubmit={handleSubmit(onSubmit)}>
                 <div className={styles.fmdiv1}>
                   <div className={styles.fmdiv2}>
                     <label for="class">Class </label>
-                    <select className={styles.class} name="class">
+                    <select className={styles.class} onChange={handleChange}>
                       <option value=""> Click here to see... </option>
                       {!Classes ? (
                         <p>Data is fetching....</p>
                       ) : (
                         Classes.map((cls) => (
-                          <option value={cls.class}>{cls.class}</option>
+                          <option name="class" value={cls.class}>{cls.class}</option>
                         ))
                       )}
                     </select>
@@ -74,7 +125,7 @@ function Question_paper() {
                         <p>Data is fetching....</p>
                       ) : (
                         Lang.map((lng) => (
-                          <option value={lng.langauge}>{lng.language}</option>
+                          <option value={lng.langauge} name="">{lng.language}</option>
                         ))
                       )}
                     </select>
@@ -82,13 +133,13 @@ function Question_paper() {
 
                   <div className={styles.fmdiv2}>
                     <label for="Subject">Subject </label>
-                    <select className={styles.Subject} name="Subject">
+                    <select className={styles.Subject} name="Subject" onChange={handleChangeSub}>
                       <option value=""> Click here to see... </option>
                       {!Sub ? (
                         <p>Data is fetching....</p>
                       ) : (
                         Sub.map((sb) => (
-                          <option value={sb.subject}>{sb.subject}</option>
+                          <option name="subject" value={sb.subject}>{sb.subject}</option>
                         ))
                       )}
                     </select>
@@ -96,11 +147,11 @@ function Question_paper() {
 
                   <div className={styles.fmdiv2}>
                     <label for="Question">Question Level </label>
-                    <select className={styles.Question} name="Question">
-                      <option value=""> Click here to see... </option>
-                      <option value="Easy"> Easy </option>
-                      <option value="Medium"> Medium </option>
-                      <option value="Hard"> Hard </option>
+                    <select className={styles.Question} name="Question" onChange={handleChangeLevel}>
+                      <option name="level" value=""> Click here to see... </option>
+                      <option name="level" value="Easy"> Easy </option>
+                      <option name="level" value="Medium"> Medium </option>
+                      <option name="level" value="Hard"> Hard </option>
                     </select>
                   </div>
 
@@ -151,9 +202,8 @@ function Question_paper() {
                       <option value="Easy"> Easy </option>
                     </select>
                   </div>
-
-                  <button className={styles.rvw} onClick={(e) => review(e)}>
-                  
+                  {/* onClick={(e) => review(e)} */}
+                  <button className={styles.rvw} type="submit" >
                     Review Question
                   </button>
 
@@ -252,11 +302,11 @@ function Question_paper() {
                       </div>
                     )}
                     {rev && (
-                      <div className="">
+                      <div className={styles.qpt}>
                         <div className={styles.qptop}>Questions</div>
-                        {!Question
+                        {!obj
                           ? null
-                          : Question.map((qu) => (
+                          : obj.map((qu) => (
                               <div className={styles.parent_qnum}>
                                 <Link to={`/question_bank/${qu.key}`}>
                                   <div className={styles.num_ques}>
@@ -292,7 +342,7 @@ function Question_paper() {
                 <div class={styles.wrapper1}>
                   <div class={styles.sidebar1}>
                     <button className={styles.btsumm}> Show Summary </button>
-                    <button className={styles.btquestpaper}>
+                    <button className={styles.btquestpaper} >
                       {" "}
                       Generate Question Paper{" "}
                     </button>
@@ -300,9 +350,9 @@ function Question_paper() {
                     {rev && (
                       <div className={styles.quesbox}>
                         <div className={styles.tqques}> Questions </div>
-                        {!Question
+                        {!obj
                           ? null
-                          : Question.map((qu) => (
+                          : obj.map((qu) => (
                               <div className={styles.parent_qnum}>
                                 <Link to={`/question_bank/${qu.key}`}>
                                   <div className={styles.num_ques}>
@@ -318,6 +368,7 @@ function Question_paper() {
                 </div>
               </div>
             </div>
+            <Link className={styles.arrow} to={"/"}><IoArrowBackCircleSharp size={50}/></Link>
           </div>
         </div>
       </div>

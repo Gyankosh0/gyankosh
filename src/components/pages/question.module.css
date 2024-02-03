@@ -227,10 +227,8 @@ body {
 }
 .wrapper{
     position: relative;
-
     padding: 10px;
     height: 100%;
-
 }
 .sidebar {
     left: 0;
@@ -266,7 +264,22 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-size: 1vw;
     /* text-align: justify; */
 }
+.qpt{
+    overflow-y: auto;
+    height: 300px;
+}
+.qpt::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  .qpt::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.qpt::-webkit-scrollbar-thumb {
+    border-radius: 8px;
 
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
 .ts {
     width: 8vw;
 
@@ -303,10 +316,25 @@ width: 65%;
 
 .quesbox {
     margin: auto;
-    width: 260px;
+    width: 270px;
     border: solid;
     padding-bottom: 5px;
+    height: 220px;
+    overflow-y: auto;
+    scrollbar-width: thin;
 }
+.quesbox::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  .quesbox::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.quesbox::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
 
 .bt-question {
     z-index: 10;
@@ -364,10 +392,11 @@ width: 65%;
 
 .parent_qnum {
     display: flex;
-    height: 35px;
+    height: 30px;
     margin-left: 70px;
     align-items: center;
     justify-content: center;
+    
 }
 
 .inp {
@@ -376,6 +405,10 @@ width: 65%;
 
 .tqques {
     height: 26px;
-    background: rgb(164, 174, 180);
-    ;
+    background: rgb(164, 174, 180);  
+}
+.arrow{
+    color: #FF791A;
+    float: left;
+    margin-left: 10px;
 }

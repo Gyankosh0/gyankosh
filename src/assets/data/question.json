@@ -1,47 +1,214 @@
 [
     {
         "key":"1",
-        "question":"1If the roots of the equation x²-px+q = 0 differ by unity, then",
-        "solution":"one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+        "class":"JEE Main + NEET + JEE Advanced",
+        "level":"Easy",
+        "subject":"",
+        "question":"jee easy If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"jee easy one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
     },
     {
         "key":"2",
-        "question":"2If the roots of the equation x²-px+q = 0 differ by unity, then",
-        "solution":"one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+        "class":"CBSE 11th board",
+        "level":"Easy",
+        "question":"11 board easy If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"11 board easy one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
     },
     {
         "key":"3",
-        "question":"3If the roots of the equation x²-px+q = 0 differ by unity, then",
-        "solution":"one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+        "class":"CBSE 11th board",
+        "level":"Medium",
+        "question":"11 board medium If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"11 board medium one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
     },
     {
         "key":"4",
-        "question":"4If the roots of the equation x²-px+q = 0 differ by unity, then",
-        "solution":"one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+        "class":"CBSE 11th board",
+        "level":"Hard",
+        "question":"11 board hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"11 board hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
     },
     {
         "key":"5",
-        "question":"5If the roots of the equation x²-px+q = 0 differ by unity, then",
-        "solution":"one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+        "class":"JEE Main + NEET + JEE Advanced",
+        "level":"Easy",
+        "question":"jee easy If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"jee easy one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
     },
     {
         "key":"6",
-        "question":"6If the roots of the equation x²-px+q = 0 differ by unity, then",
-        "solution":"one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+        "class":"CBSE 12th board",
+        "level":"Easy",
+        "question":"12 board easy If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"12 board easy one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
     },
     {
         "key":"7",
-        "question":"7If the roots of the equation x²-px+q = 0 differ by unity, then",
-        "solution":"one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+        "class":"JEE Main + NEET + JEE Advanced",
+        "level":"Easy",
+        "question":"jee easy 7If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"jee easy one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
     },
     {
         "key":"8",
-        "question":"8If the roots of the equation x²-px+q = 0 differ by unity, then",
-        "solution":"one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+        "class":"JEE Main + NEET + JEE Advanced",
+        "level":"Medium",
+        "question":"jee medium 7If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"jee medium one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
     },
     {
         "key":"9",
-        "question":"9If the roots of the equation x²-px+q = 0 differ by unity, then",
-        "solution":"one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+        "class":"JEE Main + NEET + JEE Advanced",
+        "level":"Hard",
+        "question":"Jee Hard 8If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"Jee Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"10",
+        "class":"CBSE 12th board",
+        "level":"Easy",
+        "question":"12 board easy If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"12 board easy one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"11",
+        "class":"CBSE 12th board",
+        "level":"Medium",
+        "question":"12 board Medium If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"12 board Medium one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"12",
+        "class":"CBSE 12th board",
+        "level":"Hard",
+        "question":"12 board hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"12 board hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"13",
+        "class":"CBSE 10th board",
+        "level":"Easy",
+        "question":"10 board easy If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board easy one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"14",
+        "class":"CBSE 10th board",
+        "level":"Medium",
+        "question":"10 board medium If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board medium one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"15",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"15",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"15",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"15",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"15",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"16",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"17",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"18",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"19",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"20",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"21",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"22",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"23",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"24",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"25",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
+    },
+    {
+        "key":"26",
+        "class":"CBSE 10th board",
+        "level":"Hard",
+        "question":"10 board Hard If the roots of the equation x²-px+q = 0 differ by unity, then",
+        "solution":"10 board Hard one possible set of roots for the equation r1=p+1/2 and r2 = 2q/p+1"
     }
+
 ]
