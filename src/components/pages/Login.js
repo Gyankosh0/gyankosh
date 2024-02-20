@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/logo.png";
 import bgImg from "../../assets/bgImg.jpeg";
-
+import { IoArrowBackCircleSharp } from "react-icons/io5";
 import styles from "./Login.module.css";
 import { MdLogin } from "react-icons/md";
 import { Icon } from "@iconify/react";
@@ -41,6 +41,9 @@ const Login = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles.lft}>
+      <Link className={styles.arrow} to={"/"}><IoArrowBackCircleSharp size={50}/></Link>
       </div>
     </div>
   );

@@ -60,6 +60,15 @@
 .ipIcon{
     font-size: 1.8vw;
 }
+.arrow{
+    color: #FF791A;
+    float: left;
+    margin-left: 10px;
+}
+.lft{
+    width: 100vw;
+}
+
 
 /* md */
 @media (max-width: 769px) {

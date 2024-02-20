@@ -25,12 +25,12 @@ function Question_paper() {
 
  
   let { id } = useParams();
-  const key = { id };
-  console.log(key.id);
+  const key=  { id };
+  //console.log(key.id);
+  //console.log(Question[parseInt(key.id) - 1].question);
   let p = 1;
   let k = 1;
 
-  const [chap, setChap] = useState(false);
   const [rev, setRev] = useState(false);
   const [cls, setCls] = useState(false);
   const [ques, setQues] = useState(false);
@@ -38,6 +38,7 @@ function Question_paper() {
   const [cl,setcl]=useState("");
   const [level,setlevel]=useState("");
   const [sub,setSub]=useState("");
+  const [chap,setChap]=useState("");
   const [obj,setObj]=useState([]);
   const review = (e) => {
     e.preventDefault();
@@ -56,6 +57,9 @@ function Question_paper() {
   const handleChangeSub = (e) => {
     setSub(e.target.value);
   };
+  const handleChangeChap = (e) => {
+    setChap(e.target.value);
+  };
   useEffect(() => {
     console.log(rev);
   }, [key]);
@@ -63,16 +67,17 @@ function Question_paper() {
     console.log("h");
   },[obj]);
   const onSubmit=(e)=>{
-    e.preventDefault;
+    e.preventDefault();
     console.log(e);
     setRev(true);
     const data={
       "class":cl,
       "level":level,
-      "subject":sub
+      "subject":sub,
+      "chapter":chap
     };
     
-    // console.log(JSON.stringify(data));
+    console.log(data);
     // console.log(data.class, Question[0].class);
     // var fav=[];
     // for(var i=0;i<Question.length;i++){
@@ -84,7 +89,7 @@ function Question_paper() {
     // }
     // console.log(fav);
 
-    const arr1=Question.filter(q=>q.class==data.class && q.level==data.level);
+    const arr1=Question.filter(q=>q.class==data.class && q.level==data.level &&q.subject==data.subject && q.chapter==data.chapter);
     setObj(arr1);
     /***fetch******/
     
@@ -101,7 +106,7 @@ function Question_paper() {
           </div>
           <div className={styles.box2}>
             <div>
-              <form id="formEle" className={styles.fm} onSubmit={handleSubmit(onSubmit)}>
+              <form id="formEle" className={styles.fm} onSubmit={onSubmit}>
                 <div className={styles.fmdiv1}>
                   <div className={styles.fmdiv2}>
                     <label for="class">Class </label>
@@ -175,7 +180,8 @@ function Question_paper() {
                     <select
                       className={styles.Chapter}
                       name="Chapter"
-                      onClick={() => setChap(!chap)}
+                      // onClick={() => setChap(!chap)}
+                      onChange={handleChangeChap}
                     >
                       <option value="">Click here to see... </option>
                       {!Chapt ? (
@@ -203,7 +209,7 @@ function Question_paper() {
                     </select>
                   </div>
                   {/* onClick={(e) => review(e)} */}
-                  <button className={styles.rvw} type="submit" >
+                  <button className={styles.rvw}  >
                     Review Question
                   </button>
 
@@ -327,7 +333,7 @@ function Question_paper() {
                     <p className={styles.reg}>
                       {rev && key.id
                         ? Question[parseInt(key.id) - 1].question
-                        : null}
+                        : "No Result"}
                     </p>
                   </div>
                   <div className="">
@@ -335,7 +341,7 @@ function Question_paper() {
                     <p className={styles.reg}>
                       {rev && key.id
                         ? Question[parseInt(key.id) - 1].solution
-                        : null}
+                        : "No Result"}
                     </p>
                   </div>
                 </div>

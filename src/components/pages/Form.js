@@ -24,7 +24,7 @@ export default function Form() {
                     <button className='btn bt'><Link className="td" to="/send_papers">Send Papers</Link></button>
                     <button className='btn bt'><Link className="td" to="/templates">Templates</Link></button>
                     <div className='formbtngap'></div>
-                    <button className='btn bt'><Link className="td" to="/buy_now">Buy Now</Link></button>
+                    <button className='btn bt'><Link className="td" to="/Login">Buy Now</Link></button>
                     <button className='btn bt'><Link className="td" to="/activate_licence">Activate Licence</Link></button>
                     <button className='btn bt'><Link className="td" to="/about">About</Link></button>
                 </form>

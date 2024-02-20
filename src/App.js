@@ -18,9 +18,9 @@ function App() {
           <Route path="/"
             exact element={<Form />}>
           </Route>
-          {/* <Route path="/"
+          <Route path="/Login"
             exact element={<Login/>}>
-          </Route> */}
+          </Route>
           <Route path="/question_bank"
             exact element={<QuestionPaper/>}>
           </Route>
