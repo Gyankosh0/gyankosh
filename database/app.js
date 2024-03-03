@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require("body-parser");
 const app = express();
 const sqlite = require('sqlite3').verbose();
@@ -7,6 +8,7 @@ const db = new sqlite.Database("./questions.db", sqlite.OPEN_READWRITE, (err) =>
     if (err) return console.error(err);
 });
 
+app.use(cors());
 app.use(bodyParser.json());
 
 //post request
