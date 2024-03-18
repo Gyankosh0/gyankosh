@@ -7,6 +7,9 @@ function createWindow () {
     width: 800,
     height: 700,
     webPreferences: {
+      contextIsolation:true,
+      nodeIntegration:true,
+      preload: path.join(__dirname, 'preload.js')
     }
   })
   win.webContents.openDevTools( ) ;
