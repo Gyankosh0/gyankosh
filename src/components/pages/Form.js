@@ -2,7 +2,6 @@ import React from 'react';
 import logo from "../../assets/logo.png"
 import styles from "./form.module.css"
 import bgImg from "../../assets/bgImg.jpeg";
-
 import {
     BrowserRouter as Router,
     Link

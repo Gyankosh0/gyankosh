@@ -7,19 +7,27 @@ import styles from "./Login.module.css";
 import { MdLogin } from "react-icons/md";
 import { Icon } from "@iconify/react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-
+  const Navigate=useNavigate();
   const handleLogin = async () => {
     try {
-      const response = await axios.post("http://localhost:3000/src/components/login", {
+      const response = await axios.post("http://localhost:4000/src/components/login", {
         username,
         password,
       });
       console.log(response.data);
+      if(response.data.message){
+        alert("Login successfull");
+        Navigate("/");
+      }
+      else{
+        alert("Login failed");
+        Navigate("/");
+      }
       // Handle successful login, redirect user or perform other actions
     } catch (error) {
       console.error("Error:", error.response.data);
